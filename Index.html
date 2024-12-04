@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<Html>
+
+<Head>
+    <title>Html forms</title>
+</Head>
+
+<body>
+    <h1>Student's Information</h1>
+    <form oninput="X.value=name.value">
+        <fieldset>
+            <Legend>Fill up the form</Legend>
+            <p>
+                <Label>Name :</Label>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label>Email :</label>
+                <input type="email">
+            </p>
+            <p>
+                <Label>Contact :</Label>
+                <input type="password">
+            </p>
+            <P>
+                <label>Gender</label><br>
+                <input type="radio" name="Gender">Female<br>
+                <input type="radio" name="Gender">Male
+            </P>
+            <P>
+                <Label>Extra-Curriculam</Label><br>
+                <input type="checkbox">Cultural<br>
+                <input type="checkbox">Sports<br>
+                <input type="checkbox">arts<br>
+            </P>
+            <p>
+                <label>Choose your division :</label><br>
+
+                <select>
+                    <option>Dhaka</option>
+                    <option>Rangpur</option>
+                    <option>Rajshahi</option>
+                    <option>Sylet</option>
+                    <option>Chittagang</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Save Information">
+            </p>
+            <p>
+                <output name="X"></output>
+            </p>
+        </fieldset>
+</body>
+
+</Html>
+</form>
