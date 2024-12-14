@@ -3,27 +3,38 @@
 
 <Head>
     <title>Html forms</title>
+    <style>
+        * {
+            font-family: fantasy;
+            color: whitesmoke;
+        }
+
+        .option {
+            color: navy;
+        }
+    </style>
 </Head>
 
-<body>
-    <h1>Student's Information</h1>
-    <form oninput="X.value=name.value">
+<body style="background-color: whitesmoke;">
+    <h1 style="font-family: monospace; color: navy;">Student's Information</h1>
+    <form oninput="X.value=name.value" style="background-color: navy;">
         <fieldset>
-            <Legend>Fill up the form</Legend>
+            <Legend style="color: whitesmoke;">Fill up the form</Legend>
             <p>
-                <Label>Name :</Label>
-                <input type="text" id="name">
+                <Label style="color: whitesmoke;">Name:</Label>
+                <b><input type="text" id="name"
+                        style="font-family: monospace; background-color: white; color: navy;"></b>
             </p>
             <p>
-                <label>Email :</label>
-                <input type="email">
+                <label style="color: whitesmoke;">Email:</label>
+                <input type="email" style="font-family: monospace; background-color: white; color: navy;">
             </p>
             <p>
-                <Label>Contact :</Label>
-                <input type="password">
+                <Label style="color: whitesmoke;">Contact:</Label>
+                <input type="password" style="background-color: white; color: navy;">
             </p>
             <P>
-                <label>Gender</label><br>
+                <label style="color: whitesmoke;">Gender</label><br>
                 <input type="radio" name="Gender">Female<br>
                 <input type="radio" name="Gender">Male
             </P>
@@ -36,16 +47,16 @@
             <p>
                 <label>Choose your division :</label><br>
 
-                <select>
-                    <option>Dhaka</option>
-                    <option>Rangpur</option>
-                    <option>Rajshahi</option>
-                    <option>Sylet</option>
-                    <option>Chittagang</option>
+                <select style="color: navy;">
+                    <option style="font-family: monospace; ">Dhaka</option>
+                    <option style="font-family: monospace;">Rangpur</option>
+                    <option style="font-family: monospace;">Rajshahi</option>
+                    <option style="font-family: monospace;">Sylet</option>
+                    <option style="font-family: monospace;">Chittagang</option>
                 </select>
             </p>
             <p>
-                <input type="submit" value="Save Information">
+                <input type="submit" value="Save Information" style="color: navy;">
             </p>
             <p>
                 <output name="X"></output>
